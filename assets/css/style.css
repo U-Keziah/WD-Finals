@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+#landing-page {
+    display: flex;
+    flex-direction: row;
+    height: 100dvh;
+
+    & .text {
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        
+    }
+
+    & .image {
+        overflow-x: hidden;
+        width: 150dvw;
+        
+        & .keziah-01{
+            
+            object-fit: cover;
+            object-position: -55dvw -68dvh;
+            width: 104dvw;
+            height: 100dvh;
+          
+        }
+        
+    }
+}
