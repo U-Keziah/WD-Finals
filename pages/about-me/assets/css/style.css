@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100dvw;
+    
+    & .top-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        width: 75dvw;
+        height: 10dvh;
+
+        & .container {
+            display: flex;
+            background-color: pink;
+            align-items: center;
+        }
+    }
+
+    & .bottom-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100dvw;
+        height: 90dvh;
+        
+        & .center-container {
+            width: 28dvw;
+
+            & .container {
+                background-color: pink;
+                padding: 25px;
+            }
+
+            & img {
+                padding: 5px 0px 5px 0px;
+                width: 28dvw;
+            }
+
+        }
+
+
+        & .right-container {
+            
+                & .school-info {
+                    padding: 25px;
+                    & .title {
+
+                        & h3 {
+                            margin-left: 30%;
+                        }
+                        & .year{
+                            display: flex;
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+        & .side-text {
+            & h3 {
+                display: flex;
+                align-items: center;
+                writing-mode: vertical-rl;
+                text-orientation:upright;
+            }
+        }
+        
+    }
