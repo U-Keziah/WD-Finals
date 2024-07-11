@@ -15,13 +15,17 @@
         flex-direction: row;
         justify-content: space-around;
         
-        width: 75dvw;
+        width: 95dvw;
         height: 10dvh;
 
         & .container {
             display: flex;
             background-color: pink;
             align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            margin-top: 25px;
+            width: 45dvw;
         }
     }
 
@@ -35,15 +39,73 @@
         & .center-container {
             width: 28dvw;
 
-            & .container {
+            & .container {      
                 background-color: pink;
                 padding: 25px;
             }
 
-            & img {
-                padding: 5px 0px 5px 0px;
-                width: 28dvw;
+            & .top{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+
+            & .material-symbols-outlined {
+                font-size: 45px;
             }
+
+            }
+
+            & .middle{
+                position: relative;
+
+                & .instagram{
+                    background-color: rgba(92, 84, 84, 0.545);
+                    position: absolute;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 5px 5px 5px 5px;
+                    z-index: 2;
+                    bottom: 0;
+                    left: 0;
+                    width: 28dvw;
+
+
+                    & .information {
+                        height: 10dvh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                       
+                        & > h2 {
+                            color: white;
+                        }
+
+                        & > h1 {
+                            color: white;
+                        }
+                    }
+
+                    & .icons {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 5dvw;
+                        font-size: 35px;
+                        color: white;
+                    }
+                }
+
+                & img {
+
+                    object-fit: cover;
+                    padding: 5px 0px 5px 0px;
+                    background-color: white;
+                    width: 28dvw;
+                }
+            }
+
 
         }
 
