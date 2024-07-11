@@ -10,15 +10,77 @@
 
     & .text {
         height: 100dvh;
+        width: 150dvw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: end;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 25px ;
+
+        & .sub {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            width: 96dvh;
+            margin: 5dvh 0dvh 10dvh 0dvh;
+
+            & > h3 {
+                font-size: 20px;
+                text-align: end;
+                
+            }
+        }
+
+        & .middle {
+
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            margin-top: 5dvh;
+
+            & > h1 {
+                font-size: 35px;
+            }
+
+            & > h2 {
+                font-size: 120px;
+                width: 49dvw;
+                text-align: end;
+
+            }
+        }
+
+        & .bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            margin-bottom: 29dvh;
+            margin-left: 14dvw;
+
+            & > p {
+                text-align: justify;
+                width: 35dvw;
+            }
+
+            & > a {
+                margin: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+                width: 90px;
+                background-color: pink;
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }
         
     }
 
     & .image {
         overflow-x: hidden;
+        overflow-y: hidden;
         width: 150dvw;
         
         & .keziah-01{
