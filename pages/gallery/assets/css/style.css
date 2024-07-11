@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100dvh;
+
+    & .card {
+        width: 300px;
+        background-color: pink;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+
+        & > img {
+            width: 100%;
+            height: auto;
+        }
+
+        & .card-content {
+            padding: 16px;
+        }
+    }
+  }
