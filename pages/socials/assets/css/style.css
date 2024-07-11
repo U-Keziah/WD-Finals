@@ -5,4 +5,123 @@
   
 #s-c {
     display: flex;
+    align-items:center;
+    height: 88dvh;
+    background-color: rgb(73, 94, 59);
+   
+
+    & .left-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding: 25px;
+      margin-left:5dvw ;
+      width: 45dvw;
+      height: 48dvh;
+      background-color: rgba(255, 192, 203, 0.19);
+
+      
+      & .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        height: 48dvh;
+
+        & > h1 {
+          font-size: 55px;
+          letter-spacing: 7px;
+          text-align: justify;
+
+          height: 65px;
+          margin: 0px 15px 0px 15px ;
+        }
+
+        & > h3 {
+          font-size: 15px;
+          letter-spacing: 1px;
+          margin: 0px 15px 55px 21px;
+          text-align: justify;
+          width: 23dvw;
+          height: 65px;
+        }
+      }
+    }
+
+    & .center-container{
+      position: relative;
+      height: 85dvh;
+      width: 58dvw;
+
+      & img {
+
+        object-fit: cover;
+        object-position: left;
+        position: absolute;
+        left: 0;
+        bottom:0;
+        z-index: 1;
+      }
+    }
+
+    & .right-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px;
+      margin-right:5dvw ;
+      width: 50dvw;
+      height: 18dvh;
+      background-color: rgba(255, 192, 203, 0.634);
+
+      
+      & .text-content {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        height: 20dvh;
+      
+
+      & .image {
+        width: 15dvw;
+      }
+
+      & .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(98, 31, 31);
+        height: 20dvh;
+      }
+
+      & .title{
+        & > h1 {
+          padding: 5px;
+        }
+        & > p {
+          padding: 9px;
+        }
+      }
+
+      & .social{
+        display: flex;
+        flex-direction: row;
+        height: 30dvh;
+        padding: 10px;
+
+        & > i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+          background-color: aqua;
+
+        }
+       
+    }
+  }
+}
+
 }
