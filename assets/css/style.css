@@ -18,7 +18,7 @@
         align-items: center;
         padding-right: 25px ;
 
-        ::before{
+        &::before{
             content: " ";
             position: absolute;
             top: 0;
@@ -108,7 +108,7 @@
         height: 100dvh;
         width: 50dvw;
         
-        ::before{
+        &::before{
             content: " ";
             position: absolute;
             top: 0;
@@ -116,11 +116,12 @@
             width: 150dvw;
             height: 100dvh;
             background-image: url(../img/background.jpg);
-            background-position: right;
-            background-size: contain; 
+            background-position: left;
+            background-size: cover; 
             background-repeat: no-repeat;
-            filter: blur(5px);
-            
+            filter: blur(5px) brightness(0.5) contrast(0.7) ;
+            transform: scaleX(-1); /* flip vertically */
+            z-index: -1;
         }
 
         & .keziah-01{
