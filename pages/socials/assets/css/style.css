@@ -35,16 +35,27 @@
           text-align: justify;
 
           height: 65px;
-          margin: 0px 15px 0px 15px ;
+          margin: 40px 15px 0px 15px ;
         }
 
         & > h3 {
           font-size: 15px;
           letter-spacing: 1px;
-          margin: 0px 15px 55px 21px;
+          margin: 0px 15px 0px 21px;
           text-align: justify;
           width: 23dvw;
           height: 65px;
+        }
+
+        & > p {
+          margin: 0px 15px 40px 21px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 8dvh;
+          width: 25dvw;
+          background-color: aqua;
+          border-radius: 50px;
         }
       }
     }
@@ -122,6 +133,6 @@
        
     }
   }
-}
+  }
 
 }
