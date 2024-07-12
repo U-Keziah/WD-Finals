@@ -9,20 +9,37 @@
     height: 100dvh;
 
     & .text {
-        height: 100dvh;
-        width: 150dvw;
+        position: relative;
+        height: 94dvh;
+        width: 50dvw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        margin-right: 25px ;
+        padding-right: 25px ;
+
+        ::before{
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150dvw;
+            height: 100dvh;
+            background-image: url(../img/background.jpg);
+            background-position: left;
+            background-size: 34% 121%; 
+            object-fit: contain;
+            background-repeat: no-repeat;
+            filter: blur(5px);
+            z-index: -1;
+        }
 
         & .sub {
             display: flex;
             flex-direction: column;
             align-items: end;
             width: 96dvh;
-            margin: 5dvh 0dvh 10dvh 0dvh;
+            margin: 5dvh 0dvh 5dvh 0dvh;
 
             & > h3 {
                 font-size: 20px;
@@ -53,14 +70,20 @@
         & .bottom {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: end;
             align-items: end;
-            margin-bottom: 29dvh;
-            margin-left: 14dvw;
+            margin-bottom: 5dvh;
+            margin-right: 4px;
+            margin-left: 3dvw;
+            color: white;
+            background-color: palevioletred;
 
             & > p {
+                
                 text-align: justify;
-                width: 35dvw;
+                width: 44dvw;
+                letter-spacing: 1px;
+                font-size: 21px;
             }
 
             & > a {
@@ -81,14 +104,34 @@
     & .image {
         overflow-x: hidden;
         overflow-y: hidden;
-        width: 150dvw;
+        position: relative;
+        height: 100dvh;
+        width: 50dvw;
         
+        ::before{
+            content: " ";
+            position: absolute;
+            top: 0;
+            right:0;
+            width: 150dvw;
+            height: 100dvh;
+            background-image: url(../img/background.jpg);
+            background-position: right;
+            background-size: contain; 
+            background-repeat: no-repeat;
+            filter: blur(5px);
+            
+        }
+
         & .keziah-01{
             
             object-fit: cover;
             object-position: -55dvw -68dvh;
-            width: 104dvw;
+            width: 98dvw;
             height: 100dvh;
+           
+
+            
           
         }
         
