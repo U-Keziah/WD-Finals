@@ -16,8 +16,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 150dvw;
-        height: 100dvh;
+        width: 99dvw;
+        height: 98dvh;
         background-image: url(../img/background.jpg);
         background-position: left;
         background-size: 100% 100%; 
@@ -49,9 +49,22 @@
     & .bottom-container {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         width: 100dvw;
         height: 90dvh;
+
+        & .left-container {
+            position: relative;
+            width: 30dvw;
+            height: 90dvh;
+            & > img {
+                position: absolute;
+                height: 90dvh;
+                right: 0;
+                bottom: 53px;
+                z-index: 1;
+            }
+        }
         
         & .white-background {
 
@@ -60,7 +73,7 @@
             justify-content: space-around;
             height: 75dvh;
             width: 65dvw;
-            background-color: rebeccapurple;
+            background-color: white;
             & .center-container {
                 width: 28dvw;
     
@@ -83,15 +96,15 @@
     
                 & .middle{
                     position: relative;
-    
+
                     & .instagram{
+
                         background-color: rgba(92, 84, 84, 0.545);
                         position: absolute;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
-                        padding: 5px 5px 5px 5px;
-                        z-index: 2;
+                        margin: 5px 5px 9px 0px;                        z-index: 2;
                         bottom: 0;
                         left: 0;
                         width: 28dvw;
@@ -136,16 +149,27 @@
     
     
             & .right-container {
-                
+                width: 38dvw;
+                padding: 25px;
+
                     & .school-info {
-                        padding: 25px;
+                        background-color: pink;
+                        & > h1{
+                            padding: 15px;
+                        }
                         & .title {
     
                             & h3 {
-                                margin-left: 30%;
+                                margin-left: 25%;
+                                width: 23dvw;
+                                padding: 0px 0px 25px 20px;
+                                text-align: justify;
                             }
                             & .year{
                                 display: flex;
+                                & > h1 {
+                                    margin-left: 2%;
+                                }
                             }
     
                         }
@@ -157,6 +181,7 @@
 
         & .side-text {
             & h3 {
+                padding: 15px;
                 display: flex;
                 align-items: center;
                 writing-mode: vertical-rl;
