@@ -73,7 +73,7 @@
             justify-content: space-around;
             height: 75dvh;
             width: 65dvw;
-            background-color: white;
+            background-color: whitesmoke;
             & .center-container {
                 width: 28dvw;
     
@@ -139,7 +139,6 @@
     
                         object-fit: cover;
                         padding: 5px 0px 5px 0px;
-                        background-color: white;
                         width: 28dvw;
                     }
                 }
@@ -181,11 +180,16 @@
 
         & .side-text {
             & h3 {
-                padding: 15px;
+                height: 75dvh;
+                margin: 10px;
+                padding: 5px;
                 display: flex;
+             justify-content: center;
+                background-color: whitesmoke;
                 align-items: center;
                 writing-mode: vertical-rl;
                 text-orientation:upright;
+                letter-spacing: 2px;
             }
         }
         
