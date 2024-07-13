@@ -10,10 +10,20 @@
     margin-top: 50px;    
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100dvw;
+    width: 99dvw;
     overflow: hidden;
+
+    & .text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        & > h1 {
+            font-size: 45px;
+        }
+     
+    }
 
     & .gallery {
         display: flex;
@@ -22,6 +32,7 @@
         padding: 25px;
 
         & .left {
+            border-radius: 50px;
             object-fit: cover;
             height: 500px;
             width: 500px;
@@ -29,6 +40,7 @@
 
         & .right {
             object-fit: cover;
+            border-radius: 50px;
             height: 500px;
             width: 800px;
         }
@@ -41,19 +53,23 @@
     justify-content: space-around;
     align-items: center;
     height: 100dvh;
-    width: 96dvw;
-    overflow: hidden;
+    width: 99dvw;
 
     & .right{
      display: flex;
      align-items: center;
      justify-content: center;
-     width:69dvw;
+     width:65dvw;
+     height: 75dvh;
+     border-radius: 50px;
+     border: 5px solid pink;
 
         & > img{
+            border-radius: 50px;
+
             object-fit: cover;
-            width: 700px;
-            height: 500px;
+            width: 664px;
+            height: 482px;
         }
     }
 
@@ -61,15 +77,21 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 62dvw;
+        width: 65dvw;
+        border-radius: 50px;
+       
 
         & .image{
-            display: flex;
 
+            display: flex;
+          
             & > img{
                 object-fit: cover;
                 width: 350px;
                 height: 350px;
+                padding: 10px;
+                border-radius: 50px;
+                border: 5px solid pink;
             }
 
         }
@@ -88,17 +110,22 @@
 }
 
 #hobbies {
-    margin: 25px 0px 25px 0px;
-    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    
+    
 
     & > h1 {
-        height: 500px;
-        width: 96dvw;     
+        height: 100px;
+        width: 99dvw;
         position: absolute;
         display: flex;
         align-items: center;
+        background-color: rgba(255, 192, 203, 0.237) ;
         justify-content: center;
         z-index: 2;
+        color: whitesmoke;
         font-size: 55px;
         letter-spacing: 2px;
     
@@ -109,17 +136,27 @@
       --width: 500px;
       --height: 500px;
       --quantity: 8;
-      width: 96%;
-      border: 5px solid red;
+      width: 99dvw;
       height: var(--height);
       overflow: hidden;
       mask-image: linear-gradient(to right, #ffc0cb5b, #000 20% 80%, #ffc0cb5b);
-  
+       position: relative;
+      &::before{
+
+            position: absolute;
+            content: " ";
+            filter: blur(5px);
+            width: 99dvw;
+            height: 500px;
+            background-image: url(../img/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+     }
   
       & .list {
         display: flex;
         position: relative;
-        width: 100%;
+        width: 100dvw;
         min-width: calc(var(--width) * var(--quantity));
   
         & .item {
@@ -131,6 +168,7 @@
             animation-delay: calc( (15s / var(--quantity)) * (var(--position) - 1));
           
             & > img {
+                border-radius: 50px;
               object-fit: cover;
               height: 600px;
               width: 500px;
