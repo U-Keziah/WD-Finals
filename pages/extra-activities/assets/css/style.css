@@ -4,6 +4,80 @@
     padding: 0;
 }
 
+
+
+#caster {
+    margin-top: 50px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    overflow: hidden;
+
+    & .gallery {
+        display: flex;
+        justify-content: space-around;
+        width: 100dvw;
+        padding: 25px;
+
+        & .left {
+            object-fit: cover;
+            height: 500px;
+            width: 500px;
+        }
+
+        & .right {
+            object-fit: cover;
+            height: 500px;
+            width: 800px;
+        }
+    }
+  }
+
+#model {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100dvh;
+    width: 96dvw;
+    overflow: hidden;
+
+    & .right{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width:69dvw;
+
+        & > img{
+            object-fit: cover;
+            width: 700px;
+            height: 500px;
+        }
+    }
+
+    & .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 62dvw;
+
+        & .image{
+            display: flex;
+
+            & > img{
+                object-fit: cover;
+                width: 350px;
+                height: 350px;
+            }
+
+        }
+
+    }
+
+  }
+
 @keyframes autoRun {
     from {
         left: 100%;
@@ -15,10 +89,11 @@
 
 #hobbies {
     margin: 25px 0px 25px 0px;
+    overflow: hidden;
 
     & > h1 {
         height: 500px;
-        width: 100dvw;     
+        width: 96dvw;     
         position: absolute;
         display: flex;
         align-items: center;
@@ -26,10 +101,6 @@
         z-index: 2;
         font-size: 55px;
         letter-spacing: 2px;
-
-        &:hover .item{
-            animation-play-state: paused!important ;
-        }
     
     }
 
@@ -38,7 +109,7 @@
       --width: 500px;
       --height: 500px;
       --quantity: 8;
-      width: 100dvw;
+      width: 96%;
       border: 5px solid red;
       height: var(--height);
       overflow: hidden;
@@ -55,9 +126,9 @@
             width: var(--width);
             height: var(--height);
             position: absolute;
-            left: 50%;
-            animation: autoRun 20s linear infinite;
-            animation-delay: calc( (20s / var(--quantity)) * (var(--position) - 1));
+            left:50%;
+            animation: autoRun 15s linear infinite;
+            animation-delay: calc( (15s / var(--quantity)) * (var(--position) - 1));
           
             & > img {
               object-fit: cover;
@@ -65,7 +136,7 @@
               width: 500px;
             }
         }
-  
+        
       }
     }
   }

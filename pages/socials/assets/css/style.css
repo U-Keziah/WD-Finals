@@ -144,7 +144,9 @@
 
       & .image {
         width: 15dvw;
-        padding: 15px;
+        padding: 25px;
+        height: 15dvh;
+        
         & > img {
           height: 100px;
           width: 100px;
