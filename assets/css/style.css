@@ -9,28 +9,29 @@
     height: 100dvh;
 
     & .text {
+        overflow-x: hidden;
+        overflow-y: hidden;
         position: relative;
-        height: 94dvh;
-        width: 50dvw;
+        height: 100dvh;
+        width: 110dvw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
-        padding-right: 25px ;
+        align-items: flex-end;
+        padding-right: 50px;
 
         &::before{
             content: " ";
             position: absolute;
-            top: 0;
             left: 0;
-            width: 150dvw;
-            height: 100dvh;
-            background-image: url(../img/background.jpg);
+            width: 250dvw;
+            height: 105dvh;
+            background-image: linear-gradient(to left, #a1525f 30%, transparent 50%), url(../img/background.jpg);
             background-position: left;
             background-size: 34% 121%; 
             object-fit: contain;
             background-repeat: no-repeat;
-            filter: blur(5px);
+            filter: blur(15px);
             z-index: -1;
         }
 
@@ -40,11 +41,12 @@
             align-items: end;
             width: 96dvh;
             margin: 5dvh 0dvh 5dvh 0dvh;
-
+            font-family: "Libre Bodoni", serif;
+            font-style: italic;
+            color: white;
             & > h3 {
                 font-size: 20px;
                 text-align: end;
-                
             }
         }
 
@@ -54,12 +56,16 @@
             flex-direction: column;
             align-items: end;
             margin-top: 5dvh;
+            color: white;
 
             & > h1 {
-                font-size: 35px;
+                font-family: "Libre Bodoni", serif;
+                font-style: italic;
+                font-size: 25px;
             }
 
             & > h2 {
+                font-family: "Libre Bodoni", serif;
                 font-size: 120px;
                 width: 49dvw;
                 text-align: end;
@@ -69,17 +75,20 @@
 
         & .bottom {
             display: flex;
+            padding: 30px;
             flex-direction: column;
             justify-content: end;
             align-items: end;
             margin-bottom: 5dvh;
             margin-right: 4px;
-            margin-left: 3dvw;
+            margin-left: 1dvw;
             color: white;
-            background-color: palevioletred;
+            background-color: #c5757c7e;
+            border-radius: 50px;
+
 
             & > p {
-                
+                font-family: "Raleway", sans-serif;
                 text-align: justify;
                 width: 44dvw;
                 letter-spacing: 1px;
@@ -87,16 +96,29 @@
             }
 
             & > a {
+                height: 57px;
+                width: 149px;
+                font-family: "Libre Bodoni", serif;
+                letter-spacing: 2px;
                 margin: 15px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                height: 30px;
-                width: 90px;
-                background-color: pink;
+                border-radius: 50px;
+                color: white;
+                background-color: #a1525f;
                 text-decoration: none;
                 font-size: 20px;
-            }
+                transition: all ease-in-out 0.5s;
+              
+                &:active {
+                  background-color: #683a46;
+                }
+              
+                &:hover {
+                  transform: translate(0px, -5px); /* move up on hover */
+                }
+              }
         }
         
     }
@@ -107,33 +129,31 @@
         position: relative;
         height: 100dvh;
         width: 50dvw;
+        background-color: #a1525f;
+   
+        &.active {
+            background-color:#a1525f;
+          }
         
-        &::before{
-            content: " ";
-            position: absolute;
-            top: 0;
-            right:0;
-            width: 150dvw;
-            height: 100dvh;
-            background-image: url(../img/background.jpg);
-            background-position: left;
-            background-size: cover; 
-            background-repeat: no-repeat;
-            filter: blur(5px) brightness(0.5) contrast(0.7) ;
-            transform: scaleX(-1); /* flip vertically */
-            z-index: -1;
-        }
+        
+          &.active .keziah-01 {
+            transition: all ease-out 2s;
+            opacity: 100%;
+        
+          }
+
+
+       
+
+        
 
         & .keziah-01{
-            
+            opacity: 0%;
             object-fit: cover;
-            object-position: -55dvw -68dvh;
-            width: 98dvw;
+            object-position: -39dvw -47dvh;
+            width: 70dvw;
             height: 100dvh;
-           
-
-            
-          
+    
         }
         
     }
