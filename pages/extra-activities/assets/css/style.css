@@ -62,7 +62,7 @@
      width:65dvw;
      height: 75dvh;
      border-radius: 50px;
-     border: 5px solid pink;
+     border: 5px solid #ffc0cb;
 
         & > img{
             border-radius: 50px;
