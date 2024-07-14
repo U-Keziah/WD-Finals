@@ -51,6 +51,7 @@
           font-size: 55px;
           letter-spacing: 7px;
           text-align: center;
+          font-family: "Libre Bodoni", serif;
 
           height: 65px;
           margin: 40px 15px 0px 15px ;
@@ -63,6 +64,8 @@
           text-align: center;
           width: 23dvw;
           height: 65px;
+          font-family: "Libre Bodoni", serif;
+font-style: italic;
         }
 
         & .social{
@@ -73,14 +76,16 @@
           height: 8dvh;
 
   
-          & > i {
+          & > a {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 15px;
-            background-color: pink;
+            color: white;
+            background-color: #683A46;
             font-size: 25px;
             border-radius: 25px;
+            text-decoration: none;
             transition: all ease-in-out 0.5s;
             &:active {
               background-color: #683a46;
@@ -96,21 +101,26 @@
 
     & .center-container{
       position: relative;
-      height: 85dvh;
+      height: 90dvh;
       width: 58dvw;
 
       &:hover .cosplay{
         opacity: 100%;
+        transform: rotateY(360deg);
+        transition: all ease 1s;
+        z-index: 2;
       }
 
       &:hover .keziah{
         opacity: 0%;
-
+        transform: rotateY(180deg);
+        transition: all ease 1s;
       }
 
       & .keziah {
         z-index: 1;
         left: 0;
+        transform:rotateY(360deg);
         transition: all ease 1s;
 
       }
@@ -118,6 +128,7 @@
       & .cosplay {
         opacity: 0%;
         z-index: -1;
+        transform: rotateY(180deg);
         transition: all ease 1s;
       }
 
@@ -153,7 +164,6 @@
       & .image {
         width: 15dvw;
         padding: 25px;
-        height: 15dvh;
         
         & > img {
           height: 100px;
@@ -171,14 +181,22 @@
       }
 
       & .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         & > h1 {
-          padding: 5px;
+          font-family: "Libre Bodoni", serif;
+
         }
         & >h3 {
-          font-size: 15px;
+          padding-top: 5px;
+          font-size:15px;
+          font-family: "Libre Bodoni", serif;
+          font-style: italic;
         }
         & > p {
-          padding: 9px;
+          font-family: "Raleway", sans-serif;
+
         }
       }
 
