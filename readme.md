@@ -56,25 +56,21 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
-
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+In our Final Project, We are assigned to make a resume that can be to put in our profile publicly. In this resume you will able to see my information, my hobbies and my past projects in one place. I use HTML, CSS and JavaScript to complete the website.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Gallery
+- Hover Animation
+- Clickable Container
 
 ### Technology
 <!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
@@ -115,4 +111,8 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Play and Pause in Infinite Slider with CSS Only | I use this feature to show my cosplay | https://youtu.be/mF9yOwlunWk?si=mxe6TJhTScz_IGWs |
+| W3WSchools | Good Reference to learn codes | https://www.w3schools.com/howto/default.asp |
+| How to make Awesome CSS Border Animation | CSS3 Animation  | Inspiration to do my own code to flip the image to change image | https://www.w3schools.com/howto/default.asp|
+|  Add and Remove Active Class on Click  | To Learn JavaScript | https://www.youtube.com/watch?v=lhLh8N9YN7E |
+
