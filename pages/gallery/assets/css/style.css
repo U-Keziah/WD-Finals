@@ -10,12 +10,12 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    height: 100dvh;
+    height: 200dvh;
 
     &::before{
         position: absolute;
         content: " ";
-        height: 100dvh;
+        height: 200dvh;
         width: 100dvw;
         background-image: url(../img/background.jpg);
         background-repeat: repeat-x;
@@ -58,9 +58,11 @@
     & .card-container {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
         height: 65dvh;
+        width: 100dvw;
     
 
         & .card {
@@ -108,7 +110,7 @@
             & .card-content {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 padding: 26px;
                 height: 35dvh;
                 opacity: 0;
