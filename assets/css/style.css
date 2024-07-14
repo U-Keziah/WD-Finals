@@ -16,9 +16,9 @@
         width: 110dvw;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         align-items: flex-end;
-        padding-right: 50px;
+        padding-right:15px;
 
         &::before{
             content: " ";
@@ -43,6 +43,10 @@
             font-family: "Libre Bodoni", serif;
             font-style: italic;
             color: white;
+            padding-top: 25px;
+
+           
+
             & > h3 {
                 font-size: 20px;
                 text-align: end;
@@ -136,13 +140,23 @@
           &.active .keziah-01 {
             transition: all ease-out 2s;
             opacity: 100%;
-        
           }
 
+          &.active h1{
+            opacity: 0%;
+          }
 
+          & > h1{
+            writing-mode: vertical-rl;
+            text-orientation:sideways-right;
+            position: absolute;
+            display: flex;
+            justify-content:center;
+            height: 100dvh;
+            font-size: 100px;
+            color: white;
+        }
        
-
-        
 
         & .keziah-01{
             opacity: 0%;
