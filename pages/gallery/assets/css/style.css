@@ -4,12 +4,26 @@
   }
 
   .gallery{
+    position: relative;
     overflow: hidden;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
     height: 100dvh;
+
+    &::before{
+        position: absolute;
+        content: " ";
+        height: 100dvh;
+        width: 100dvw;
+        background-image: url(../img/background.jpg);
+        background-repeat: repeat-x;
+        background-size: contain;
+        background-position: 13% 50%;
+        filter: brightness(35%);
+        z-index: -1;
+    }
  
     & .text-container {
 
@@ -25,7 +39,7 @@
         padding: 15px;
         width: 100dvw;
         text-align: center;
-
+        color: white;
          }
 
         & > h3 {
@@ -36,7 +50,7 @@
             font-style: italic;
             padding: 5px;
             letter-spacing: 2px;
-
+            color: white;
         } 
     }
 
@@ -126,6 +140,14 @@
                     text-decoration: none;
                     font-family: "Libre Bodoni", serif;
                     letter-spacing: 1px;
+                    transition: all ease-in-out 1s;
+                    &:active {
+                        background-color: #c5757c;
+                      }
+                    
+                      &:hover {
+                        transform: translate(0px, -5px); /* move up on hover */
+                      }
                 }
 
 
