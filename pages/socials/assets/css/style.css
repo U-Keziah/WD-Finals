@@ -80,7 +80,15 @@
             padding: 15px;
             background-color: pink;
             font-size: 25px;
-  
+            border-radius: 25px;
+            transition: all ease-in-out 0.5s;
+            &:active {
+              background-color: #683a46;
+            }
+          
+            &:hover {
+              transform: translate(0px, -5px); /* move up on hover */
+            }
           }
       }
     }
