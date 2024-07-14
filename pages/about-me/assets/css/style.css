@@ -31,9 +31,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
     width: 95dvw;
     height: 10dvh;
+
+    
 
     & .container {
       display: flex;
@@ -43,6 +44,12 @@
       border-radius: 50px;
       margin-top: 25px;
       width: 45dvw;
+
+      & > h3 {
+        font-family: "Libre Bodoni", serif;
+        letter-spacing: 2px;
+      }
+     
     }
   }
 
@@ -97,15 +104,13 @@
       height: 85dvh;
       width: 65dvw;
       border-radius: 25px;
-      padding: 25px;
       background-color: whitesmoke;
-
 
       & .center-container {
         width: 28dvw;
 
         & .container {
-          background-color: pink;
+          background-color:#f9aaad;
           padding: 25px;
           display: flex;
           flex-direction: column;
@@ -137,6 +142,7 @@
 
           & .material-symbols-outlined {
             font-size: 45px;
+            
           }
 
        
@@ -216,18 +222,27 @@
       }
 
       & .right-container {
-        height: 70dvh;
+        height: 80dvh;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-
       
+        & > h1 {
+          font-family: "Libre Bodoni", serif;        
+          font-size: 25px;
+          padding: 15px 0px 15px 0px;
+          font-weight: 800;
+          letter-spacing: 2px;
+          line-height: 25px;   
+        }
 
         & .school-info {
-          background-color: pink;
+          background-color:#f9aaad;
           width: 32dvw;
-          height: 45dvh;
+          height: 36dvh;
+          padding-top: 29px;
           border-radius: 25px;
+
 
           & > h1 {
             font-family: "Libre Bodoni", serif;        
@@ -245,6 +260,7 @@
               width: 21dvw;
               text-align: justify;
               padding-bottom: 8px;
+              line-height: 25px;   
 
               font-family: "Raleway", sans-serif;   
               font-size: 20px;   
@@ -271,8 +287,7 @@
             & > h3 {
                 font-family: "Libre Bodoni", serif;        
                 font-size: 25px;
-                padding: 25px 0px 15px 0px;
-    
+                padding: 15px 0px 15px 0px;
                 font-weight: 800;
                 letter-spacing: 2px;   
     }
@@ -284,17 +299,19 @@
 
   & .side-text {
     & h3 {
+      font-family: "Libre Bodoni", serif;
       height: 85dvh;
       margin: 10px;
       padding: 5px;
       display: flex;
       justify-content: center;
       border-radius: 25px;
-      background-color: whitesmoke;
+      background-color:whitesmoke;
       align-items: center;
       writing-mode: vertical-rl;
       text-orientation: upright;
       letter-spacing: 2px;
+      font-size: 15px;
     }
   }
 
