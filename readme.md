@@ -113,6 +113,6 @@ WD-ProjectName
 |-|-|-|
 | Play and Pause in Infinite Slider with CSS Only | I use this feature to show my cosplay | https://youtu.be/mF9yOwlunWk?si=mxe6TJhTScz_IGWs |
 | W3WSchools | Good Reference to learn codes | https://www.w3schools.com/howto/default.asp |
-| How to make Awesome CSS Border Animation | CSS3 Animation  | Inspiration to do my own code to flip the image to change image | https://www.w3schools.com/howto/default.asp|
+| How to make Awesome CSS Border Animation CSS3 Animation  | Inspiration to do my own code to flip the image to change image | https://www.w3schools.com/howto/default.asp|
 |  Add and Remove Active Class on Click  | To Learn JavaScript | https://www.youtube.com/watch?v=lhLh8N9YN7E |
 
